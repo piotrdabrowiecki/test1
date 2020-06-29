@@ -98,6 +98,7 @@ guessBtn.addEventListener('click', function (params) {
                 guessInput.disabled = true;
                 guessInput.style.borderColor = 'red';
                 setMessage(`Game over, you lost. The correct number was ${winningNum}`, 'red');
+                winningNum = randomFromTo(1,10),
                 guessBtn.value = 'Play Again';
             } else {
                 //game continues
