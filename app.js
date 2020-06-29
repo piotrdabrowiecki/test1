@@ -1,7 +1,7 @@
 //define game variables:
 let min = 1,
     max = 10,
-    winningNum = 2,
+    winningNum = randomFromTo(1,10),
     guessesLeft = 3;
 
 //UI elemets;
@@ -27,13 +27,16 @@ guessBtn.addEventListener('mouseout', function (params) {
     document.getElementById('guess-btn').style.background = 'transparent';
 })
 guessBtn.addEventListener('click', function (params) {
-
     allDivs.forEach(div => {
         var createdDiv = document.createElement('div');
+        createdDiv.classList.add('created');
         div.appendChild(createdDiv);
     });
-
     if(guessBtn.value === 'Play Again') {
+        allCreated =  document.querySelectorAll('.created');
+        allCreated.forEach(div => {
+            div.remove();
+         });
         allDivs = document.querySelectorAll('.box div');
         allDivs.forEach(div => {
            div.style.background = 'transparent';
@@ -55,6 +58,7 @@ guessBtn.addEventListener('click', function (params) {
         }
         //check if it is the winning numer:
         if(guess === winningNum) {
+            setMessage('', 'white');
             document.getElementById('guess-btn').style.background = 'transparent';
             guessBtn.disabled = true;
             change('animate');
