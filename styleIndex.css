@@ -1,0 +1,200 @@
+
+#header {
+    position: relative;
+    left: 30%;
+    top: 50%;
+}
+
+.middleDiv {
+    border: 3px black;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    border-radius: 20%;
+    background: linear-gradient(-45deg, rgb(127, 127, 163) 0%, rgb(110, 110, 155) 35%, rgb(221, 228, 230), #34353d);
+    /* animation: mymove 8s linear infinite alternate; */
+    animation: rotation 10s infinite linear;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+#games {
+    position: relative;
+    top: 20%;
+    left: 30%;
+    bottom:10%;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background: linear-gradient(90deg, rgb(97, 97, 100) 0%, rgb(145, 145, 151) 35%, rgb(221, 228, 230) 100%); */
+
+}
+
+#redirect-btn1 {
+    color: black;
+}
+
+#redirect-btn2 {
+    color: black;
+}
+
+#redirect-btn3 {
+    color: black;
+}
+
+section {
+    /* width: 100%; */
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #000000, #b8e2fa, #09203a, #000000);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+       background-position:  0 50%;
+    }
+    50% {
+        background-position:  100% 50%;
+     }
+    100% {
+        background-position:  0 50%;
+    }
+}
+
+@keyframes changeDiv {
+    0% {
+       background:  0 100%;
+    }
+    50% {
+        background:  100% 50%;
+     }
+    100% {
+        background:  0 100%;
+    }
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {bottom: 0px;}
+    
+}
+
+@keyframes rotation {
+    50% {
+      transform: rotatey(90deg);
+    }
+    100% {
+      transform: rotatey(0deg);
+    }
+}
+
+@keyframes starRotation {
+    50% {
+      transform: rotatey(360deg);
+    }
+    100% {
+      transform: rotatey(0deg);
+    }
+}
+
+.star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: silver;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid silver;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+  }
+
+.star-five:before {
+    border-bottom: 80px solid silver;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+.star-five:after {
+    position: absolute;
+    display: block;
+    color: silver;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid silver;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+.box div:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: starRotation 10s infinite linear alternate;
+}
+.box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: starRotation 10s infinite linear alternate;
+}
+

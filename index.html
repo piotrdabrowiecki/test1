@@ -4,56 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
-    <title>Number Guesser</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleIndex.css">
 </head>
 <body>
+    <section>
     <div class="wrapper">
-        <h2></h2>
         <div class="box">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+            <div class="star-five"></div>
+        </div>
+        <div class='middleDiv' id="middleDiv">
+            <div>
+                <h3 id="header">Choose Your Game</h3>
+            </div>
+            <div id="games">
+                <div class="redirect">
+                    <input type="submit" value="Number Guessing Game" id="redirect-btn1">
+                </div>
+                <div class="redirect">
+                    <input type="submit" value="Game 2" id="redirect-btn2">
+                </div>
+                <div class="redirect">
+                    <input type="submit" value="Game 3" id="redirect-btn3">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <h1>
-           Number Guesser
-        </h1>
-        <div id="game">
-            <p>Guess a number between <span class="min-number">1</span> and <span class="max-number">10</span></p>
-            <input type="number" id="guess-input" placeholder="Enter your guess">
-            <input type="submit" value="Submit" id="guess-btn">
-            <p class="message"></p>
-        </div>
-    </div>
-    <script src="app.js"></script>
+    </section>
+ <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
